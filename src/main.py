@@ -5,7 +5,13 @@ import pickle
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import os
 
+# Get the absolute path of the model file
+model_path = os.path.join(os.path.dirname(__file__), "../model/aqi_model.pkl")
+
+# Normalize the path to handle different OS path styles
+model_path = os.path.abspath(model_path)
 # Streamlit App Title
 st.title("AQI Prediction Dashboard")
 
@@ -30,7 +36,7 @@ if uploaded_file is not None:
 
         # Load or Train Model
         try:
-            with open("../model/aqi_model.pkl", "rb") as f:
+            with open(model_path, "rb") as f:
                 model = pickle.load(f)
         except FileNotFoundError:
             st.warning("Training a new model as no pre-trained model is found.")
