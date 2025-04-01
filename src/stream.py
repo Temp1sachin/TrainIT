@@ -12,7 +12,10 @@ st.set_page_config(page_title="📊 EDA Report Viewer", layout="wide")
 st.title("📊 Exploratory Data Analysis (EDA) Report Viewer")
 
 # Define the folder containing Jupyter Notebooks
-notebook_folder = "../notebook"
+
+
+notebook_folder = "../notebook" if os.path.exists("../notebook") else "./notebook"
+
 notebooks = [f for f in os.listdir(notebook_folder) if f.endswith(".ipynb")]
 
 # Check if notebooks exist
