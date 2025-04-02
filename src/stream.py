@@ -17,13 +17,14 @@ st.title("📊 Exploratory Data Analysis (EDA) Report Viewer")
 notebook_folder = "../notebook" if os.path.exists("../notebook") else "./notebook"
 
 notebooks = [f for f in os.listdir(notebook_folder) if f.endswith(".ipynb")]
+notebooks.sort()
 
 # Check if notebooks exist
 if not notebooks:
     st.warning("⚠️ No EDA reports found in the 'ipynb' folder. Please generate and save an EDA notebook.")
 else:
     # Dropdown to select a notebook
-    selected_notebook = st.selectbox("Select an EDA Notebook:", notebooks)
+    selected_notebook = st.selectbox("Select an EDA Notebook:", notebooks,index=0)
 
     # Load and parse the selected notebook
     notebook_path = os.path.join(notebook_folder, selected_notebook)
