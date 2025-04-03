@@ -38,7 +38,7 @@ The datasets provided by the organizers are:
 ├── 🎥 src
 │   ├── stream.py  # Streamlit application for visualization
 │
-├── 📚 reports
+├── 📚 report
 │   ├── EDA_Report.pdf  # PDF report summarizing EDA insights
 │
 ├── .gitignore
