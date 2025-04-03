@@ -4,7 +4,7 @@
 
 **Organizer:** Army Institute of Technology (AIT), Pune\
 **Track:** ImpactX\
-**Team:** 3 Peas in a Pod
+**Team:** 2023ugee059
 
 ## 📖 Project Description
 
@@ -38,6 +38,9 @@ The datasets provided by the organizers are:
 ├── 🖥️ src
 │   ├── stream.py  # Streamlit application for visualization
 │
+├── 📚 reports
+│   ├── EDA_Report.pdf  # PDF report summarizing EDA insights
+│
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
@@ -49,6 +52,8 @@ The datasets provided by the organizers are:
 - 🔮 **Predictive model** for analyzing air quality trends (generated dynamically when running `2 (training_aqi).ipynb`).
 - 🔗 **Merged dataset** (generated dynamically when running `3 (merging_datasets).ipynb`).
 - 📜 **Social impact report** summarizing insights.
+- 🗂 **PDF Report of EDA** (`reports/EDA_Report.pdf`).
+- 🛠 **Deployed Streamlit application** for interactive visualization.
 
 ## Tools & Technologies
 
@@ -58,8 +63,8 @@ The datasets provided by the organizers are:
 
 ## ⚠️ Constraints
 
-- 🚫 Only the provided dataset is used.
-- 🚫 No external datasets or pre-trained models.
+-  Only the provided dataset is used.
+-  No external datasets or pre-trained models.
 
 ## ▶️ How to Run the Project
 
@@ -75,6 +80,14 @@ The datasets provided by the organizers are:
    ```bash
    streamlit run src/stream.py
    ```
+4. Access the Deployed Streamlit Application
+
+Visit the deployed application at:
+
+```
+https://trainitgit-mopafvcyyuhh9pyausvrep.streamlit.app/
+```
+
 
 ## Future Improvements
 
