@@ -1,4 +1,4 @@
-# 🌍 Exploratory Data Analysis and Predictive Modeling of AQI Trends in India
+# 🌍 ImpactX: Exploratory Data Analysis and Predictive Modeling of AQI Trends in India
 
 ## Hackathon: TrainIT - Where Data Meets Creativity
 
